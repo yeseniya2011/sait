@@ -1,3 +1,156 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+ul,li,p,a,body,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
 body{
+    font-family: 'Roboto','Arial',sans-serif;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.main-header{
+    border: 2px solid #000;
+    padding: 20px 0px;
+    background-color: #FDFDFD;
+}
+
+.logo{
+    margin-right: 15px;
+}
+
+.header-wrap{
+    display: flex;
+    align-items: center;
+}
+
+.main-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-item{
+    margin-right: 55px;
+}
+
+.nav-list-item a{
+    display: block;
+    width: 40px;
+}
+
+.header-left-part{
+    display: flex;
+    background-color: #a8a7a7cf;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+.nav-list-item a{
+    display: block;
+    width: 40px;
+}
+
+
+.header-left-part-wrap{
+    width: 100%;
+}
+
+
+.header-sail-alarm{
+    font-family: 'Rubik Mono One','Arial',sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.main-wrap{
+    display: flex;
+    background-color:#989696;
+    justify-content: center;
+}
+
+.main-footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link-list{
+    display: flex;
+}
+
+aside{
+    width: 300px;
+    background-color: #b7b7b7;
+    padding: 20px 25px;
+    border: 3px solid #000;
+    margin-right: 40px;
+}
+
+.side-nav li{
+    background-color:#fff;
+    margin-bottom:7px;
+    padding:5px 10px;
+}
+
+.side-nav a{
+    text-decoration: none;
+    color: #343434;
+}
+
+
+.index-main{
+    padding-bottom: 50px;
+}
+
+.main-container{
+    width: 900px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.best-shrek{
+    padding: 20px 25px;
+    background-color: #00ffd5;
+    margin-bottom: 35px;
+}
+
+.shreck-img-wrap{
+    width: 185px;
+}
+
+.description-wrap{
+    display:flex;
+    justify-content: space-between;
+}
+
+.slider-container{
     background-color: #fff;
+    width: 940px;
+    min-height: 160px;
+    border-radius: 30px;
+    margin-left: -20px;
 }

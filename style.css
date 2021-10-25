@@ -194,3 +194,74 @@ footer{
     line-height: 19px;
     color: #000000;
 }
+
+.old-price{
+    position: relative;
+}
+
+.old-price span{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.old-price .throw-line{
+    width: 175px;
+    height: 3px;
+    background: #e92b2b;
+    position: absolute;
+    left: -15px;
+    top: 20px;
+}
+
+.new-price span{
+    font-family: 'Roboto','Arial',sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 66px;
+    text-decoration-line: underline;
+    color: #ffffff;
+}
+
+.slider-img_wrap{
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    width: 170px;
+}
+
+.slider-btn{
+    border: none;
+    position: absolute;
+    width: 32px;
+    height: 55px;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    background: #fff628;
+    border-radius: 7px;
+    top: 40%;
+    cursor: pointer;
+}
+
+.slider_btn:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.slider_btn:active{
+    box-shadow: none;
+}
+
+.btn--left{
+    left: 10px;
+}
+
+.btn--right{
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.current-slide{
+    display: block;
+}

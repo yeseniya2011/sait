@@ -11,5 +11,20 @@ backBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     var currentSlide = document.querySelector('.current-slide');
     currentSlide.classList.remove('current-slide');
-    counter--;
-})  
+    counter --;
+    if(counter < 0){
+        counter = sliderList.length-1;
+    }
+    sliderList[counter].classList.add('current-slide');
+}) 
+
+fwdBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    var currentSlide = document.querySelector('.current-slide');
+    currentSlide.classList.remove('current-slide');
+    counter ++;
+    if(counter >= sliderList.length){
+        counter=0;
+    }
+    sliderList[counter].classList.add('current-slide');
+})

@@ -56,11 +56,6 @@ ul,li{
     margin-right: 55px;
 }
 
-.nav-list-item a{
-    display: block;
-    width: 40px;
-}
-
 .header-left-part{
     display: flex;
     background-color: #e29affcf;
@@ -150,21 +145,24 @@ aside{
 
 .slider-container{
     background-color: #fff;
-    width: 940px;
+    width: 900px;
     min-height: 160px;
     border-radius: 30px;
     margin-left: -20px;
+    position: relative;
 }
 
 footer{
     background-color:#fcff65;
 }
 
-.slider-item{
-    background-color:linear-gradient(93deg, #f6ffbe 0.75%, #d16fff 100%);
+.slider_item{
+    /*background: linear-gradient(93deg, #f6ffbe 0.75%, #d16fff 100%);*/
+    background-image: url(https://nardi-chetki.ru/image/cache/catalog/skidka-10-protsentov-800x600.jpg) ;
     width: 100%;
     cursor: pointer;
     display: none;
+    border-radius: 30px;
 }
 
 .slider-item_pricing{
@@ -189,8 +187,8 @@ footer{
 .slider-item_text{
     font-family:'Roboto','Arial',sans-serif;
     width: 390px;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 20px;
     line-height: 19px;
     color: #000000;
 }
@@ -203,7 +201,7 @@ footer{
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .old-price .throw-line{
@@ -221,7 +219,7 @@ footer{
     font-size: 56px;
     line-height: 66px;
     text-decoration-line: underline;
-    color: #ffffff;
+    color: #000000;
 }
 
 .slider-img_wrap{
@@ -231,7 +229,7 @@ footer{
     width: 170px;
 }
 
-.slider-btn{
+.slider_btn{
     border: none;
     position: absolute;
     width: 32px;

@@ -275,12 +275,19 @@ nav{
     overflow: hidden;
 }
 
-nav button{
+nav .search-place{
+    float: right;
+}
+
+nav .search-place button:hover{
+    background: #ea00ff;
+}
+nav .search-place button{
     float: right;
     padding: 3px;
     margin-top: 7px;
     margin-right: 15px;
-    background: salmon;
+    background: rgb(255, 255, 255);
     font-size: 18px;
     border: none;
     cursor: pointer;
@@ -299,6 +306,32 @@ nav button{
         padding: 12px;
     }
     nav input[type=text]{
-        border: 1px solid #73ec09;
+        border: 7px ridge #b700ffcf;
     }
+}
+
+nav input [type=text]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.navigation{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.search-place{
+    background-color: #8e9fffcf;
+    border: 7px ridge #d059ffcf;
+}
+
+input{
+    width: 96%;
+    padding-bottom: px;
+}
+
+.description-wrap .Govorit-Chi{
+    text-align: right;
 }

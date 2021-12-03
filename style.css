@@ -445,3 +445,84 @@ input{
 .prosentov{
     margin-left: 30px;
 }
+
+.goods-item{
+    width: 220px;
+    box-sizing: border-box;
+    margin-right: 80px;
+    margin-bottom: 60px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 8px 4px rgb(32, 33, 121);
+}
+
+.shop-content-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-two{
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 900px;
+}
+
+.goods-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.goods-item img{
+    width: 220px;
+    height: 240px;
+}
+
+.goods-item:nth-of-type(3n){
+    margin-right: 0;
+}
+
+.goods-item:nth-of-type(n+4){
+    margin-bottom: 0;
+}
+
+.goods-item:hover{
+    box-shadow: 0 0 16px 8px rgb(221, 99, 201);
+}
+
+.goods-item-header{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.goods-item-title{
+    padding: 0;
+    margin: 13px 0;
+     margin-left: 15px;
+    font-size: 20px;
+    color: rgb(173, 51, 255);
+    line-height: 18px;
+}
+
+.goods-item-title span{
+    display: block;
+    text-transform: none;
+}
+
+.goods-item-price{
+    display: flex;
+}
+
+.goods-item .goods-item-price{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.goods-item-price .price-value{
+    display: block;
+    width: 95px;
+    padding: 10px 0;
+    text-align: center;
+    background: rgb(229, 229, 229);
+}

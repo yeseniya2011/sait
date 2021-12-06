@@ -526,3 +526,31 @@ input{
     text-align: center;
     background: rgb(229, 229, 229);
 }
+
+.btn{
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font: inherit;
+    text-align: center;
+    text-transform: inherit;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+}
+
+.btn:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 73, 73);
+} 
+
+.btn:active{
+    color: rgb(255, 255, 255, 0.3);
+    border: none;
+    outline: none;
+}
+
+.goods-item-price .shop-btn{
+    width: 95px;
+}

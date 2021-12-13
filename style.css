@@ -571,6 +571,10 @@ input{
 .shop-content-wrapper{
     display: flex;
     justify-self: space-between;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 900px;
 }
 
 .goods-item-gallery{
@@ -591,7 +595,7 @@ input{
 }
 
 .item-photo:hover {
-    box-shadow: 0 0 16px 8px rgb(148, 255, 134);
+    box-shadow: 0 0 16px 8px rgb(255, 176, 242);
 }
 
 .primary-photo{
@@ -601,10 +605,51 @@ input{
 }
 
 .primary-photo:hover {
-    box-shadow: 0 0 16px 8px rgb(79, 187, 65);
+    box-shadow: 0 0 16px 8px rgb(255, 169, 241);
 }
 
 .goods-item-description .description-header{
     display: flex;
     justify-content: space-between;
+}
+
+.inner-title{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 20px;
+}
+
+.description-header p:last-child{
+    color: rgb(172, 255, 146);
+}
+
+.goods-item-description p{
+    margin-bottom: 30px;
+}
+
+.goods-item-description .goods-item-price{
+    margin-bottom: 70px;
+}
+
+.inner-content-title{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.goods-item-description{
+    margin-left: 20px;
+}
+
+.zashita{
+    list-style-image: url(img/imgonline-com-ua-Resize-ARVMTEdE33Gro.jpg);
+    margin-bottom: 10px;
+    margin-left: 20px;
 }

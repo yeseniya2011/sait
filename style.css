@@ -707,10 +707,10 @@ input{
     left: 50%;
     display: none;
     width: 540px;
-    margin-left: -230px;
+    margin-left: -300px;
     padding: 10px 20px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-
+    margin-top: 60px;
 }
 
 .model-close{
@@ -722,6 +722,7 @@ input{
     font-size: 0;
     background-color: transparent;
     cursor: pointer;
+    border: none;
 }
 
 
@@ -738,8 +739,33 @@ input{
    position: absolute; 
    content: "";
    top: 15px;
-   left: 2px;
+   left: -45px;
    width: 19px;
    height: 3px;
    background-color:rgb(0, 0, 0);
 }
+
+.model-close::before{
+    transform: rotate(45deg);
+}
+
+.model-close::after{
+    transform: rotate(-45deg);
+}
+
+.model-show{
+    display: block;
+    animation: bounce;
+    animation-duration: 0.6s;
+}
+
+.none{
+    width: 30px;
+}
+
+.busket-button{
+    padding-left: 850px;
+    margin-bottom: 10px;
+}
+
+.

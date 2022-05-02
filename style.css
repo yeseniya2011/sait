@@ -713,6 +713,7 @@ input{
     margin-top: 60px;
 }
 
+
 .model-close{
     position: absolute;
     top: 0;
@@ -730,9 +731,11 @@ input{
     transform: rotate(45deg);
 }
 
+
 .model-close::after{
     transform: rotate(-45deg);
 }
+
 
 .model-close::before,
 .model-close::after{
@@ -745,13 +748,16 @@ input{
    background-color:rgb(0, 0, 0);
 }
 
+
 .model-close::before{
     transform: rotate(45deg);
 }
 
+
 .model-close::after{
     transform: rotate(-45deg);
 }
+
 
 .model-show{
     display: block;
@@ -759,13 +765,44 @@ input{
     animation-duration: 0.6s;
 }
 
+
 .none{
     width: 30px;
 }
+
 
 .busket-button{
     padding-left: 850px;
     margin-bottom: 10px;
 }
 
-.
+
+.camera{
+    height: 800px;
+    background-color: #D6A5E2;
+    width: 100%;
+}
+
+
+.kamera{
+    width: 65%;
+}
+
+
+.kuromi{
+    width: 150px;
+    border: 3px ridge rgb(114, 31, 170);
+    border-radius: 25px;
+}
+
+
+.tick{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.delate img{
+    width: 50px;
+}

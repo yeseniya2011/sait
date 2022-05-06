@@ -785,7 +785,11 @@ input{
 
 
 .kamera{
-    width: 65%;
+    width: 71%;
+    height: 100%;
+    border-right:2px solid rgb(0, 0, 0);
+    padding-left: 60px;
+    padding-top: 20px;
 }
 
 
@@ -796,13 +800,43 @@ input{
 }
 
 
-.tick{
-    height: 100px;
-    display: flex;
-    flex-direction: column;
+.delate img{
+    width: 40px;
 }
 
+.avacado{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
 
-.delate img{
-    width: 50px;
+.mango{
+    margin-bottom: 10px;
+}
+
+.delete{
+    display: flex;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.shop{
+    width: 800px;
+}
+
+#berry,
+#eseniya{
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.tickis{
+    margin-top: 55px;
+}
+
+.paragraph{
+    float: right;
+    width: 400px;
+    margin: -130px;
+    margin-right: 230px;
 }

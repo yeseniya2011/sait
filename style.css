@@ -802,6 +802,7 @@ input{
 
 .delate img{
     width: 40px;
+    margin-left: 20px;
 }
 
 .avacado{
@@ -818,6 +819,8 @@ input{
     height: 300px;
     margin: 0;
     padding: 0;
+    margin-top: 96px;
+    margin-bottom: -90px;
 }
 
 .shop{
@@ -838,5 +841,35 @@ input{
     float: right;
     width: 400px;
     margin: -130px;
-    margin-right: 230px;
+    margin-right: 180px;
+    margin-left: 150px;
+    color:#000;
+}
+
+.choose{
+    display: flex;
+    width: 200px;
+}
+
+.tick{
+    margin-top: 40px;
+}
+
+.one{
+    display: flex;
+    width: 100px;
+}
+
+.counter{ 
+     margin-left: 10px;
+     margin-right: 10px;
+     background-color: blue;
+     border-radius: 50%;
+     width: 20px;
+     text-align: center;
+}
+
+.wow{
+    border: 1px solid#000;
+    width: 880px;
 }

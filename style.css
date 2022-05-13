@@ -790,6 +790,7 @@ input{
     border-right:2px solid rgb(0, 0, 0);
     padding-left: 60px;
     padding-top: 20px;
+    float: left;
 }
 
 
@@ -872,4 +873,45 @@ input{
 .wow{
     border: 1px solid#000;
     width: 880px;
+}
+
+
+.sum{
+    background-color: #B469FF;
+    position: fixed;
+    margin-left: 987px;
+    width: 300px;
+    height: 210px;
+    border: 5px ridge rgb(210, 37, 233);
+}
+
+.sun{
+    width: 400px;
+}
+
+.sum-two{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.lini{
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 275px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.buy{
+    cursor: pointer;
+    background-color: #FCFF6F;
+    width: 275px;
+    height: 50px;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.buy a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    text-align: center;
 }

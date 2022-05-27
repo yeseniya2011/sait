@@ -917,5 +917,33 @@ input{
 }
 
 .sale{
-    
+    background-color: #D7AEF0;
+    margin-top: 50px;
+}
+
+.flex{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.salle{
+    text-align: center;
+}
+
+.smile{
+    margin-bottom: 50px;
+}
+
+.it-isnt-working{
+    background-color: #D7AEF0;
+}
+
+.back-button{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.queen{
+    height: 100px;
 }

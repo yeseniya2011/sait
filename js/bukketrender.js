@@ -39,6 +39,42 @@ function createListeners (){
         })
     });
     document.querySelectorAll(".pluse").forEach(el=>{
-        el.addEventListener("click",)
+        el.addEventListener("click",(el)=>{
+            counterHandler(el.target, 1)
+        })
+    })
+    document.querySelectorAll(".minus").forEach(el=>{
+        el.addEventListener("click",(el)=>{
+            counterHandler(el.target, -1)
+        })
     })
 }
+
+function delateItem(articul){
+    const data = getData().filter(el=> el != articul);
+    localStorage.setItem("bukket",JSON.stringify(data));
+    renderPage();
+}
+
+function removeListeners(){
+    const deleteBtns = document.querySelectorAll(".delate");
+    document.querySelectorAll(".pluse").forEach(el=>{
+        el.removeEventListener("click",()=>{})
+    });
+    document.querySelectorAll(".minus").forEach(el=>{
+        el.removeEventListener("click",()=>{})
+    });
+    deleteBtns.forEach(el=>{
+        el.removeEventListener("click",()=>{})
+    });
+}
+
+function counterHandler(target,items){
+    const counterBox = target.parentNode.parentNode.querySelector(".counter");
+    if (items < 0 && counterBox.innerText <=0){
+        return;
+    }
+    counterBox.innerText = counterBox.innerText*1 + items;
+}
+
+renderPage();

@@ -36,76 +36,42 @@
       <div class="kamera">
         <h1 class="mango">🎔Корзина🎔</h1>
         <a class="avacado" href="index.html">ᐊВернутся обратно🌈</a>
+        <template id="bukket-good_template">
+            <div class="bukket_good">
+                <div class="shop">
+                    <label class="bukket_label" for="berry">
+                        <div class="choose">
+                            <input class="tickis" name="" id="berry" type="checkbox">
+                            <img class="kuromi bukket-good_image" src="./img/ukrashenia/kuromii/kuromiii.PNG">
+                        </div>
+                        <div class="bukket_description-content">
+                            <p class="bukket-good_name">Парные металлические браслеты</p>
+                        <b class="bukket-good_price">180руб</b>
+                        </div>
+                    </label>
+                </div>
+                <div class="play">
+                    <div class="delate">
+                        <img src="./img/krasota/sponsh/piratim.png" alt="">
+                    </div>
+                    <div class="one">
+                        <p>
+                            <button class="minus" type="button">-</button>
+                        </p>
+                        <p class="counter">0</p>
+                        <p>
+                            <button class="pluse" type="button">+</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="wow"></div>
+        </template>
         <div class="tick">
-           <form action="">
-            <div class="delete">
-            <div class="shop">
-                <a title="When you click on a picture, description or price, then you are transferred to the product page!Когда ты нажимаешь на  картинку, описание или цену , то вас переносит на страницу товара!"href="#">
-               <label for="berry">
-                <div class="choose">
-                   <input class="tickis" type="checkbox" name="" id="berry">
-                   <img class="kuromi" src="./img/sumki/portfel/kur0omishka.PNG">
-                </div>
-                <div class="paragraph"> 
-                   <p>Милый Повседневный школьный рюкзак для учеников, универсальный вместительный милый Коричный рюкзак Kuromi Mymelody Sanrios из аниме</p>
-                   <b style="color: blue;">1080,52руб</b>
-                </div>
-               </label>
-             </a>
-            </div>
-          <div class="play">
-            <div class="delate">
-                <img src="./img/krasota/sponsh/piratim.png">
-            </div>
-             <div class="one">
-                <p>
-                    <button class="minus" type="button" id="minus-eseniya">-</button>
-                </p>
-                <p class="counter" id="counter-label">
-                    0
-                </p>
-                <p>
-                    <button class="pluse" type="button" id="plus-esya">+</button>
-                </p>
-             </div>
+            <div id="render_root">
+
             </div>
         </div>
-        <div class="wow"></div>
-        <div class="delete">
-            <div class="shop">
-                <a title="When you click on a picture, description or price, then you are transferred to the product page!Когда ты нажимаешь на  картинку, описание или цену , то вас переносит на страницу товара!"href="#">
-               <label for="eseniya">
-                <div class="choose">
-                   <input type="checkbox" name="" id="eseniya">
-                   <img class="kuromi" src="./img/ukrashenia/kuromii/kuromiii.PNG">
-                </div>
-                <div class="paragraph"> 
-                   <p>2 шт., парные металлические браслеты в виде куклы-смайлика, браслет на эластичной веревке</p>
-                   <b style="color: blue;">180.00руб</b>
-                </div>
-               </label>
-               </a>
-            </div>
-          <div class="play">
-            <div class="delate">
-                <img src="./img/krasota/sponsh/piratim.png">
-            </div>
-             <div class="one">
-                <p>
-                    <button class="minus" type="button" id="minus-eseniya">-</button>
-                </p>
-                <p class="counter" id="counter-label">
-                    0
-                </p>
-                <p>
-                    <button class="pluse" type="button" id="plus-esya">+</button>
-                </p>
-             </div>
-            </div>
-        </div>
-           </form> 
-        </div>
-      </div>
       <div class="sum">
         <div class="sum-two">
             <h1>Сумма заказа:</h1>
@@ -153,6 +119,6 @@
           </div>
       </div>
   </footer>
- <script src="korzina.js"></script>
+ <script src="js/bukketrender.js"></script>
 </body>
 </html>

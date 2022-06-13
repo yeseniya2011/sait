@@ -778,9 +778,11 @@ input{
 
 
 .camera{
-    height: 800px;
+    height: initial;
     background-color: #D6A5E2;
     width: 100%;
+    display: flex;
+    padding-bottom: 15px;
 }
 
 
@@ -836,6 +838,7 @@ input{
 
 .tickis{
     margin-top: 55px;
+    transform: scale(2);
 }
 
 .paragraph{
@@ -954,5 +957,32 @@ input{
     position: fixed;
     right: 70px;
     bottom: 100px;
+    text-decoration: none;
+}
+
+.bukket_good{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.shop{
+    display: flex;
+}
+
+.bukket_label{
+    display: flex;
+}
+
+.bukket_description-content{
+    margin-left: 10px;
+    padding-top: 30px;
+}
+
+.bukket-good_name{
+    color:#000;
+}
+
+.bukket_link{
     text-decoration: none;
 }

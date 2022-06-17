@@ -1,8 +1,9 @@
 const template = document.getElementById("bukket-good_template");
 const content = template.content;
+
 const renderRoot = document.getElementById("render_root");
 
-function render(content, goodData){
+function render(content, goodData) {
     content.querySelector(".bukket-good_name").innerText = goodData?.name;
     content.querySelector(".bukket-good_price").innerText = goodData?.price+"руб";
     content.querySelector(".bukket-good_image").setAttribute("src", goodData?.image);
@@ -24,14 +25,15 @@ function getData(){
 function renderPage(){
     renderRoot.innerHTML = "";
     const currentBukket = getData();
-    currentBukket.forEach(element => {
-        render(content, Bukket[element])        
+
+    currentBukket.forEach(el => {
+        render(content, Bukket[el]);        
     });
     createListeners();
 }
 
-function createListeners (){
-    const deleteBtns = querySelectorAll(".delate");
+function createListeners(){
+    const deleteBtns = document.querySelectorAll(".delate");
     deleteBtns.forEach(element=>{
         element.addEventListener("click",({target})=>{
             removeListeners();
@@ -50,13 +52,13 @@ function createListeners (){
     })
 }
 
-function delateItem(articul){
-    const data = getData().filter(el=> el != articul);
-    localStorage.setItem("bukket",JSON.stringify(data));
+function delateItem(articul) {
+    const data = getData().filter(el => el != articul);
+    localStorage.setItem("bukket", JSON.stringify(data));
     renderPage();
 }
 
-function removeListeners(){
+function removeListeners() {
     const deleteBtns = document.querySelectorAll(".delate");
     document.querySelectorAll(".pluse").forEach(el=>{
         el.removeEventListener("click",()=>{})
@@ -69,7 +71,7 @@ function removeListeners(){
     });
 }
 
-function counterHandler(target,items){
+function counterHandler(target,items) {
     const counterBox = target.parentNode.parentNode.querySelector(".counter");
     if (items < 0 && counterBox.innerText <=0){
         return;

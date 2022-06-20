@@ -41,3 +41,11 @@ create(
     "./img/krasota/blestashki/blestashkki.PNG",
     "46sgv-e745"
 );
+
+create(
+    "Пластина для румян MAFFICK Little Odin",
+    300,
+    "sheese.html",
+    "./img/krasota/sirnik/cheese.PNG",
+    "sb-365"
+);

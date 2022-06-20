@@ -15,7 +15,7 @@ function render(content, goodData) {
 }
 
 function getData(){
-    const store = localStorage.getItem("bukket");
+    const store = localStorage.getItem("bukket")
     if (!store){
         return []
     }
@@ -34,8 +34,8 @@ function renderPage(){
 
 function createListeners(){
     const deleteBtns = document.querySelectorAll(".delate");
-    deleteBtns.forEach(element=>{
-        element.addEventListener("click",({target})=>{
+    deleteBtns.forEach(el=>{
+        el.addEventListener("click",({target})=>{
             removeListeners();
             deleteItem(target.parentNode.getAttribute("data-article"));
         })
@@ -52,7 +52,7 @@ function createListeners(){
     })
 }
 
-function delateItem(articul) {
+function deleteItem(articul) {
     const data = getData().filter(el => el != articul);
     localStorage.setItem("bukket", JSON.stringify(data));
     renderPage();

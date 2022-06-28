@@ -10,6 +10,8 @@ function render(content, goodData) {
     content.querySelector("label").setAttribute("for", goodData?.name);
     content.querySelector("input").setAttribute("id", goodData?.name);
     content.querySelector(".delate").setAttribute("data-article",goodData?.articul);
+    document.querySelector(".price-buy").innerText = priceBuy() + "руб";
+    document.querySelector(".price-buy2").innerText = priceBuy() + "руб";
     const clone = content.cloneNode(true);
     renderRoot.appendChild(clone);
 }
@@ -24,8 +26,9 @@ function getData(){
 
 function renderPage(){
     renderRoot.innerHTML = "";
+    document.querySelector(".price-buy").innerText = "0,00руб";
+    document.querySelector(".price-buy2").innerText = "0,00руб";
     const currentBukket = getData();
-
     currentBukket.forEach(el => {
         render(content, Bukket[el]);        
     });
@@ -79,4 +82,10 @@ function counterHandler(target,items) {
     counterBox.innerText = counterBox.innerText*1 + items;
 }
 
+function priceBuy(){
+    const currentBukket = getData();
+    return currentBukket.reduce((acc,i) =>{
+        return acc + Bukket[i].price
+    },0)
+}
 renderPage();

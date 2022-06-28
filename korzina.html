@@ -4,7 +4,7 @@
     <link rel="shortcut icon" href="img/softkotik.ico"type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wnameth=device-wnameth, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Softshop магазин</title>
@@ -37,12 +37,12 @@
         <div class="json">
         <h1 class="mango">🎔Корзина🎔</h1>
         <a class="avacado" href="index.html">ᐊВернутся обратно🌈</a>
-        <template id="bukket-good_template">
+        <template name="bukket-good_template">
             <div class="bukket_good">
                 <div class="shop">
                     <label class="bukket_label" for="berry">
                         <div class="choose">
-                            <input class="tickis" name="" id="berry" type="checkbox">
+                            <input class="tickis" name="" name="berry" type="checkbox">
                             <img class="kuromi bukket-good_image" src="./img/ukrashenia/kuromii/kuromiii.PNG">
                         </div>
                         <div class="bukket_description-content">
@@ -69,7 +69,7 @@
             <div class="wow"></div>
         </template>
         <div class="tick">
-            <div id="render_root">
+            <div name="render_root">
 
             </div>
         </div>
@@ -81,14 +81,14 @@
             <table>
                 <tr>
                     <td class="sun">стоимость:</td>
-                    <td class="sun">0,00руб.</td>
+                    <td class="sun price-buy"></td>
                 </tr>
             </table>
             <div class="lini"></div>
             <table>
                 <tr>
                     <td class="sun">к оплате:</td>
-                    <td class="sun">0,00руб.</td>
+                    <td class="sun price-buy2"></td>
                 </tr>
             </table>
             <div class="buy">
@@ -121,6 +121,30 @@
           </div>
       </div>
   </footer>
+  <section class="payment-method">
+    <h1 class="payment">способ доставки:</h1>
+    <div class="payment-list">
+        <form>
+                <input name="method" type="radio">CDEK
+                <input name="method" type="radio">Почта России
+                <input name="method" type="radio">Курьером
+                <input name="method" type="radio">Самовывоз из пункта выдачи
+    </form>
+        <h1 class="payment">Способ оплаты</h1>
+        <form action="">
+            <p>
+                <input name="method" type="radio">Банковской картой
+            </p>
+            <p>
+                <input name="method" type="radio">Онлайн кошельком
+            </p>
+        </form>
+        <div class="pay_method">
+        <a class="pay-buy" href="#">Купить</a>
+        </div>
+    </div>
+    <button class="close-pay">закрыть</button>
+  </section>
  <script src="js/bukket.js"></script>
  <script src="js/bukketrender.js"></script>
 </body>

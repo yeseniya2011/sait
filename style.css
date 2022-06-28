@@ -1000,3 +1000,19 @@ input{
     position: fixed;
     left: 960px;
 }
+
+.payment-method{
+    background-color: #C1BEE9;
+    width: 300px;
+    border:5px ridge rgb(114, 31, 170);
+}
+
+.payment{
+    text-align: center;
+}
+
+.pay-buy{
+    text-decoration: none;
+    background-color: #D185F5;
+    color:#000;
+}
